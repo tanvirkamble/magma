@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>magma</title>
+</head>
+
+<body>
+    <div id="nav">
+        <!-- <img class="logo" src="/assets/logo.png" alt="logo"> -->
+        <div class="logo">
+            <h2>this.Magma</h2>
+        </div>
+        <div class="book">
+            <div class="button">
+                <p>Book a demo</p>
+            </div>
+            <img class="menu " src="/assets/menu-3-line.png" alt="Menu" onclick="toggleSidebar()">
+        </div>
+
+        <!-- Sidebar (Initially hidden) -->
+        <div id="sidebar" class="sidebar">
+
+            <img class="close" src="/assets/close.png" alt="Close" onclick="toggleSidebar()">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="main">
+        <div data-scroll data-scroll-speed="-10" id="page1">
+            <video src="/assets/hero.mp4" autoplay loop muted></video>
+            <div class="content">
+                <h2>Redefining Real Estate with DePIN, Digital Twins, & AI</h2>
+                <div class="subcontent">
+
+                    <p>Unlock the $300+ trillion real estate market with the power of Digital Twin Tokens (DTT®).</p>
+                    <div class="button">
+                        <p>learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div id="scrollLogo">
+                <p>Scroll</p>
+                <img src="/assets/scroll.png" alt="scroll">
+            </div>
+        </div>
+        <div id="page2">
+            <div class="content">
+
+                <p>Unlocking the World’s Largest Asset Class
+                </p>
+                <h2>Real estate, a $300Tn market, faces inefficiencies and environmental challenges. Magma’s AI-driven
+                    platform leverages DePIN and tokenization to connect buildings with Web3.</h2>
+            </div>
+        </div>
+
+        <div id="page3">
+            <div class="content">
+                <h2>Build With Us</h2>
+            </div>
+            <canvas></canvas>
+        </div>
+
+        <div id="page4">
+
+            <div class="content">
+                <p>CONNECT THE BUILDING'S TWIN TO YOUR STAKEHOLDERS</p>
+                <h2>Users connect directly to the DTT without any intermediaries. As Stakeholder, they have the power to
+                    upload and verify information that enriches the Digital Twin Token. A Stakeholder's ability to
+                    access validated-data to perform tasks depends on their specific role.</h2>
+
+            </div>
+        </div>
+
+        <div id="page5">
+            <div class="content">
+                <h2>Experience With Us</h2>
+            </div>
+            <canvas></canvas>
+        </div>
+
+        <div id="page6">
+            <div class="content">
+
+                <p>INCREASE YOUR DIGITAL TWIN TOKEN’S VALUE</p>
+                <h2>DTT data increases the value of your digital asset by lowering operational costs, improving energy
+                    use,
+                    assisting commercialization, and boosting the liquidity of your building.</h2>
+            </div>
+        </div>
+
+        <div id="page7">
+            <div class="circle">
+                <div class="innerCircle">
+                    <div class="content">
+                        <p>50%</p>
+                    </div>
+                </div>
+            </div>
+            <canvas></canvas>
+        </div>
+
+        <div id="page8">
+            <video src="/assets/video2.webm" autoplay loop muted>
+            </video>
+            <div class="content">
+                <h2>magma dtt</h2>
+                <div class="button">
+                    <p>learn more</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="page9">
+            <div class="content">
+                <div class="left">
+                    <h2>What is Magma ?</h2>
+                </div>
+                <div class="right">
+                    <img src="/assets/page9.jpg" alt="img">
+                    <div class="subContent">
+                        <div class="inner">
+                            <h2>Web3 platform</h2>
+                            <p>Magma is a Web3 platform for all real estate stakeholders, which provides users with the
+                                ability to manage interactions between physical and digital assets through unique, and
+                                collectively generated, 3D representations of their buildings.</p>
+
+                        </div>
+                        <div class="inner">
+                            <h2>The Digital Twin Token: The building’s unique digital copy</h2>
+                            <p>Magma uses blockchain technology to record essential data, which enables transparent,
+                                traceable, and immutable streams of information to be readily accessible to its users.
+                                Magma smart contracts are built with this blockchain data to expedite tasks like
+                                requests for proposals, lease agreements, and services arrangements.</p>
+
+                        </div>
+                        <div class="inner">
+                            <h2>An Index of digitization</h2>
+                            <p>The Magma Index provides valuable insight for decision-making regarding data-sharing,
+                                service-creating, and operational/environmental expectations.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page10">
+            <h1>Recent Blogs</h1>
+            <div class="content">
+                <div class="inner">
+                    <div class="left">
+                        <img src="/assets/blog1.jpeg" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>MAY 30,2023</h4>
+                        <h1>Magma At CBRE France's 3rd Tech Talk</h1>
+
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="left">
+                        <img src="/assets/blog2.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>MAY 30,2023</h4>
+                        <h1>Blockchain and Digital Assets WorkShop - Magma x SBA</h1>
+
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="left">
+                        <img src="/assets/blog3.png" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>MAY 30,2023</h4>
+                        <h1>Magma and SuperWorld create breakthrough patnership to link physical real assets and their
+                            in digital twins in real
+                            world locations anywhere on Earth</h1>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="button">
+                <p>
+                    View all
+                </p>
+            </div>
+
+        </div>
+
+        <div id="page11">
+            <div class="content">
+                <h2>Featured In</h2>
+                <p>Thrilled to have been featured in several prominent media outlets and leading professionals aross the
+                    world's best real estate and web3 institutions.</p>
+            </div>
+            <div class="scroller">
+                <div class="scroller-in">
+                    <img src="/assets/scroller1.png" alt="">
+                    <h4>Digital Twin</h4>
+                    <img src="/assets/scroller2.avif" alt="">
+                    <h4>Blockchain</h4>
+                    <img src="/assets/scroller3.png" alt="">
+                    <h4>Artificial Intelligence</h4>
+                    <img src="/assets/scroller4.png" alt="">
+                    <h4>Magma Index</h4>
+                    <img src="/assets/scroller5.png" alt="">
+                    <h4>Digital Twin token ( DTT )</h4>
+                </div>
+                <div class="scroller-in">
+                    <img src="/assets/scroller1.png" alt="">
+                    <h4>Digital Twin</h4>
+                    <img src="/assets/scroller2.avif" alt="">
+                    <h4>Blockchain</h4>
+                    <img src="/assets/scroller3.png" alt="">
+                    <h4>Artificial Intelligence</h4>
+                    <img src="/assets/scroller4.png" alt="">
+                    <h4>Magma Index</h4>
+                    <img src="/assets/scroller5.png" alt="">
+                    <h4>Digital Twin token ( DTT )</h4>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <h2>FOOTER</h2>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
