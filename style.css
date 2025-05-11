@@ -26,14 +26,10 @@ body {
 }
 
 #nav > .logo {
-  /* width: 5vw; */
-  /* height: 55%; */
-  /* background-color: red; */
   color: #fff;
   font-size: 1.3vw;
 
   font-weight: 700;
-  /* letter-spacing: 0.1em; */
 
   /* Make it visually pop */
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 0, 0, 0.4);
@@ -52,7 +48,7 @@ body {
 }
 #nav > .book > img {
   width: 3.5vw;
-  height: 4vh;
+  height: 2vw;
 }
 #nav > .book > .button {
   color: #fff;
@@ -63,6 +59,7 @@ body {
   border: 2px solid #fff;
   border-radius: 50px;
   /* font-size: clamp(0.5rem, 1.5vw, 0.9rem); */
+  white-space: nowrap;
   font-size: 0.9vw;
 
   position: relative; /* Needed for ::before to position correctly */
@@ -210,7 +207,7 @@ body {
 #page1 > .content > .subcontent > .button {
   width: 12vw;
   /* width: 27%; */
-  height: 7.5vh;
+  height: 60px;
   margin-left: 5%;
   border-radius: 100px;
   text-transform: uppercase;
@@ -333,13 +330,14 @@ body {
   /* width: 15%; */
   /* background-color: red; */
   top: 50%;
-  left: 32%;
-  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
   line-height: 1.1;
   z-index: 2;
-  /* font-family: sans-serif; */
   font-weight: 10;
   font-size: 4vw;
+  color: #fff;
+  /* -webkit-text-stroke: 1px #fff; */
 }
 
 /* page4  */
@@ -401,7 +399,9 @@ body {
   height: 20%;
   /* width: 50%; */
   top: 50%;
-  left: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: white;
   line-height: 1.1;
   z-index: 2;
@@ -524,7 +524,6 @@ body {
   transform: translate(-50%, 70%);
   color: white;
   line-height: 1.1;
-  animation: fadeIn 1s ease-in-out;
   z-index: 2;
   text-transform: uppercase;
 
@@ -835,7 +834,6 @@ body {
   font-family: sans-serif;
   /* text-transform: uppercase; */
   margin-right: 15vw;
-  transition: all linear 0.4s;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
 }
@@ -865,8 +863,286 @@ body {
   height: 50vh;
   background-color: #000;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
+}
+
+#footer > h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* tablets */
+
+@media (max-width: 1024px) {
+  /* tablet-specific overrides */
+
+  #nav {
+    height: 10vw;
+  }
+  #nav > .book > .button {
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 25px;
+  }
+  #nav > .book > img {
+    width: 3.5vw;
+    height: 2.5vw;
+  }
+
+  .sidebar ul li {
+    padding: 10%;
+  }
+
+  /* page1 */
+
+  #page1 > .content {
+    top: 20%;
+    width: 80%;
+  }
+  #page1 > .content > h2 {
+    font-size: 7vw;
+  }
+  /* #page1 > .content > .subcontent > .button {
+  } */
+
+  /* page 7 */
+
+  #page7 > .circle {
+    width: 30vw;
+    height: 40vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #page7 > .circle > .innerCircle {
+    border: 2px solid #fff;
+  }
+
+  /* page 9 */
+  #page9 {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav {
+    /* background-color: red; */
+    padding-right: 15%;
+  }
+  #nav > .book > .button {
+    height: 20px;
+    font-size: 1.7vw;
+  }
+  #nav > .book {
+    gap: 20%;
+  }
+  #nav > .book > img {
+    width: 3.5vw;
+    height: 4vw;
+  }
+
+  .sidebar {
+    width: 30vw;
+  }
+
+  .sidebar img {
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  .sidebar ul li a {
+    font-size: 3.5vw;
+  }
+
+  /* page1 */
+
+  #page1 > .content {
+    width: 70%;
+  }
+  #page1 > .content > h2 {
+    font-size: 12vw;
+  }
+  #page1 > .content > .subcontent {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+  #page1 > .content > .subcontent > p {
+    width: 100%;
+    font-size: 3vw;
+    font-weight: 320;
+  }
+  #page1 > .content > .subcontent > .button {
+    height: 40px;
+    width: 100px;
+    margin-left: 0%;
+    margin-top: 5%;
+  }
+  #page1 > .content > .subcontent > .button > p {
+    font-size: 2vw;
+  }
+
+  #scrollLogo {
+    left: 10%;
+    bottom: 10%;
+  }
+
+  /* page 2 */
+  #page2 > .content {
+    gap: 5%;
+  }
+  #page2 > .content > p {
+    font-size: 4vw;
+    /* margin-bottom: ; */
+  }
+  #page2 > .content > h2 {
+    font-size: 9vw;
+  }
+
+  /* page 6 */
+
+  #page6 > .content {
+    gap: 5%;
+  }
+  #page6 > .content > p {
+    font-size: 4vw;
+    /* margin-bottom: ; */
+  }
+  #page6 > .content > h2 {
+    font-size: 8.5vw;
+  }
+
+  /* page 8 */
+
+  #page8 > .content > .button {
+    width: 20vw;
+    height: 5vh;
+  }
+  #page8 > .content > .button > p {
+    font-size: 2.5vw;
+  }
+
+  /* page 9  */
+
+  #page9 > .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+  }
+  #page9 > .content > .left {
+    width: 100%;
+    /* padding-left: 10%; */
+  }
+  #page9 > .content > .left > h2 {
+    font-size: 10vw;
+  }
+  #page9 > .content > .right {
+    width: 100%;
+    margin-top: 10%;
+  }
+  #page9 > .content > .right > .subContent {
+    margin-top: 5%;
+  }
+  #page9 > .content > .right > .subContent > .inner {
+    margin-top: 5%;
+  }
+  #page9 > .content > .right > .subContent > .inner > p {
+    font-size: 3.25vw;
+  }
+  #page9 > .content > .right > .subContent > .inner > h2 {
+    font-size: 5vw;
+  }
+
+  /* page 10 */
+
+  #page10 > h1 {
+    font-size: 10vw;
+    top: 5%;
+  }
+
+  #page10 > .content {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50%;
+    top: 13%;
+    left: 10%;
+    position: relative;
+  }
+
+  #page10 > .content > .inner {
+    /* background-color: green; */
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+
+  #page10 > .content > .inner > .left {
+    width: 75%;
+  }
+
+  #page10 > .content > .inner > .left > img {
+    height: 20vh;
+    width: 100%;
+  }
+
+  #page10 > .content > .inner > .right {
+    margin-top: 2.5%;
+    padding-left: 0%;
+  }
+  #page10 > .content > .inner > .right > h4 {
+    font-size: 4vw;
+  }
+  #page10 > .content > .inner > .right > h1 {
+    font-size: 6vw;
+    width: 80%;
+    line-height: 1.1;
+  }
+
+  #page10 > .button {
+    top: 92%;
+    left: 10%;
+    width: 30vw;
+    height: 5vh;
+  }
+
+  /* page11 */
+
+  #page11 {
+    height: 70vh;
+  }
+
+  #page11 > .content {
+    width: 80%;
+    left: 10%;
+    top: 10%;
+  }
+
+  #page11 > .content > h2 {
+    font-size: 10vw;
+    font-weight: 300;
+    margin-bottom: 3%;
+    color: #fff;
+  }
+
+  #page11 > .content > p {
+    font-size: 4vw;
+  }
+
+  #page11 > .scroller {
+    top: 34%;
+  }
+
+  /* footer */
+
+  #footer > h2 {
+    top: 25%;
+  }
 }
